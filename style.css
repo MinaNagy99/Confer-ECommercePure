@@ -1,0 +1,220 @@
+ @import url('https://fonts.googleapis.com/css2?family=Delicious+Handrawn&family=Encode+Sans+Expanded&family=Montserrat+Alternates&family=PT+Sans&family=Roboto+Condensed&family=Rubik&display=swap');
+
+ :root{
+    --mainColor:80bb01
+ }
+
+
+body{
+    background-color: rgb(242, 241, 241);
+
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;}
+
+
+
+.slider{
+    height: 80vh;
+}
+.z-2{
+    z-index: 3;
+}
+
+.formSignIn{
+    border: 1px dotted black;
+    height: 50vh;
+    
+    
+}
+.formSignUp{
+    border: 1px dotted black;
+    height: 100vh;
+    
+}
+.beforeName{
+    color: #cdcdcd;
+    font-size: 13px;
+    margin-bottom: 12px;
+    text-align: center;
+}
+.nameOfItem{
+    font-weight: 500;
+    font-size: 17px;
+    color: #242424;
+    text-align: center;
+}
+.bg-white{
+    background-color: white;
+}
+.price{
+    color: darkgrey;
+    font-weight: 400;
+    font-size: 21px;
+    text-align: center;
+}
+.next{
+    position: absolute;
+    right: 10px;
+    top: 25vh ;
+    cursor: pointer;
+}
+.pre{
+    position: absolute;
+    left: 10px;
+    top: 25vh  ;
+    cursor: pointer;
+}
+.iconOnHover{
+    color: white;
+    
+}
+.bg-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #80bb01;
+    width: 43px;
+    height: 43px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 18px;
+}
+.navbar{
+    background-color: white;
+    color: #242424;
+    font-size: 16px;
+    box-shadow: 0px 6px 5px 1px rgba(102, 102, 102, 0.75);
+
+}
+.lineAddToCart{
+    opacity: 0;
+    transition: all 0.5s;
+    transform: translateY(50%);
+
+}
+.onhover2:hover .lineAddToCart{
+    opacity: 1;
+    transition: all 0.5s;
+    transition: all 0.5s;
+    transform: translateY(0);
+}
+.style-none{
+    text-decoration: inherit;
+    color: inherit;
+    cursor: auto;
+}
+.item img{
+
+    transition: all 0.3s;
+
+}
+
+.text-green{
+    color: #80bb01;
+}
+.header-signin{
+    font-weight:bold;
+    border-bottom: #242424 1px dotted;
+
+    padding: 5px 20px;
+    font-size: 30px;
+}
+.mt-100{
+    margin-top: 150px;
+}
+.form{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+}
+.slider{
+    height: 50vh;
+    width: 100%;
+    margin-top: 1000px;
+    margin-bottom: 30px;
+}
+.bg-mainSecondColor{
+    background-color: rgb(218, 218, 218);
+}
+#star{
+    color: yellow;
+    position: absolute;
+    top: 60px;
+    left: 120px;
+    z-index: 4;
+    font-size: 25px;
+
+}
+.bg-category{
+    width: 200px;
+    /* background-color: #80bb01; */
+    height: 200px;
+    padding-bottom: 10px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img-product{
+    width: 200px;
+    height: 300px;
+    margin-bottom: 0px !important;
+}
+.w-60{
+    width: 200px;
+    height: 200px;
+}
+.bg-green{
+    background-color: #80bb01;
+}
+.cursol-pointer{
+    cursor: pointer;
+}
+.btnUp{
+    position: fixed;
+    bottom: 90px;
+    right: 50px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 4;
+    font-size: 30px;
+}
+.layer-category{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: all 1s;
+    background-color: #6969698e;
+    box-shadow: 5px 5px 5px black;
+    cursor: pointer;
+
+
+}
+.wishlist{
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.layer-category:hover p{
+    opacity: 1 !important;
+    transition: ease 1s;
+}
+.layer-category:hover p span{
+    background-color: rgba(0, 0, 0, 0.397);
+    color:white;
+    transition: ease 1s;
+
+}
+.layer-category:hover{
+    background-color:transparent;
+
+}
+.img-category{
+    width: 416px;
+    height: 300px;
+}

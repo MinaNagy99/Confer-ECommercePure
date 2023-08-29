@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+  />
+    <link rel="stylesheet" href="../bootstrap.min.css" />
+    <link rel="stylesheet" href="cart.css" />
+    <link rel="stylesheet" href="../footer/footer.css">
+    <link rel="stylesheet" href="../node_modules//sweetalert2/dist/sweetalert2.min.css">
+    <link rel="stylesheet" href="../style.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg w-100 position-fixed z-2 top-0">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <i class="fa-solid fa-angles-right"></i> Confer</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="fs-5 navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../about/about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="../contactUs/contactUs.html"
+                >Contact US</a
+              >
+            </li>
+          </ul>
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li id="cartIcon" class="nav-item me-5 mt-2 position-relative">
+              <a href="cart.html">
+                <i class="text-muted fs-4 fa-solid fa-cart-shopping"></i>
+                <span class="visually-hidden">unread messages</span>
+              </a>
+            </li>
+            <li id="loginBtn" class="nav-item">
+              <a
+                class="nav-link"
+                href="../login/login.html"
+                >Login</a
+              >
+            </li>
+            <li id="registerBtn" class="nav-item">
+              <a
+                class="nav-link"
+                href="../register/register.html"
+                >Register</a
+              >
+            </li>
+            <li id="logoutBtn" class="nav-item cursol-pointer ">
+              <a
+                class="nav-link"
+                >LogOut</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+    
+    <div class="container-fluid container-md  mt-100 box-shadow w-100  ">
+      <div class="row">
+        <div class="col-8">
+          <div class="part1">
+            <div
+              class="d-flex justify-content-between align-items-center ms-4 me-4 mb-5 mt-4"
+            >
+              <h2 class="fw-bolder mt-4">Shoping Cart</h2>
+              <p class="text-muted numOfItem fs-5 mt-4 "> items</p>
+            </div>
+            <hr />
+            <div class="container-Cart ">
+           
+            </div>
+            <!-- <div class="row p-3">
+              <div class="col-2">
+                <img class="w-100" src="../imgs/1.jpeg" alt="" />
+              </div>
+              <div class="col-1"></div>
+
+              <div class="col-3">
+                <p class="text-muted fw-semibold mb-1">shirt</p>
+                <p class="fw-semibold">Cotton T-Shirt</p>
+              </div>
+              <div
+                class="col-1 d-flex justify-content-around p-0 align-items-center"
+              >
+                <p class="fs-4">-</p>
+                <p class="fw-bold containCout rounded-2">1</p>
+                <p class="fs-4">+</p>
+              </div>
+              <div class="col-1"></div>
+              <div class="col-2 fw-semibold">
+                <p class="mt-3">
+                  <span class="text-danger">44.00</span
+                  ><span class="fw-semibold"> L.E</span>
+                </p>
+              </div>
+              <div class="col-1"></div>
+              <div class="col-1">
+                <button class="btn-close mt-2"></button>
+              </div>
+            </div>
+            <hr />
+            <div class="row p-3">
+                <div class="col-2">
+                  <img class="w-100" src="../imgs/1.jpeg" alt="" />
+                </div>
+                <div class="col-1"></div>
+  
+                <div class="col-3">
+                  <p class="text-muted fw-semibold mb-1">shirt</p>
+                  <p class="fw-semibold">Cotton T-Shirt</p>
+                </div>
+                <div
+                  class="col-1 d-flex justify-content-around p-0 align-items-center"
+                >
+                  <p class="fs-4">-</p>
+                  <p class="fw-bold containCout rounded-2">1</p>
+                  <p class="fs-4">+</p>
+                </div>
+                <div class="col-1"></div>
+                <div class="col-2 fw-semibold">
+                  <p class="mt-3">
+                    <span class="text-danger">44.00</span
+                    ><span class="fw-semibold"> L.E</span>
+                  </p>
+                </div>
+                <div class="col-1"></div>
+                <div class="col-1">
+                  <button class="btn-close mt-2"></button>
+                </div>
+              </div> -->
+          </div>
+        </div>
+        <div class="col-4 p-4">
+          <h4 class="fw-semibold my-4">Summery</h4>
+          <hr />
+          <div class="d-flex justify-content-between">
+            <p class="numOfItem fw-semibold">ITEMS </p>
+            <p  class="fw-semibold totalPrice"> L.E</p>
+          </div>
+          <p class=" my-2">SHIPPING</p>
+          <select class="bg-light mb-2 w-100 p-1" name="" id="">
+            <option value="">Standard-Delivery- 5.00 L.E</option>
+          </select>
+          <p class=" my-2">GIVE CODE</p>
+    
+          <input class="border-0 bg-light mb-4 w-100 p-1" type="text" placeholder="Enter your code">
+          <br>
+          <hr>
+          <div class="fw-semibold text-muted d-flex justify-content-between">
+            <p>TOTAL PRICE</p>
+            <p class="totalPrice"> L.E</p>
+          </div>
+          <br>
+          <button class="checkout">CHECKOUT</button>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="container p-3 border-bottom d-flex justify-content-center">
+        <div class="about">
+          <h2>ABOUT</h2>
+          <p>
+            Scanfcode.com CODE WANTS TO BE SIMPLE is an initiative to help the
+            upcoming programmers with the code. Scanfcode focuses on providing
+            the most efficient code or snippets as the code wants to be simple.
+            We will help programmers build up concepts in different programming
+            languages that include C, C++, Java, HTML, CSS, Bootstrap,
+            JavaScript, PHP, Android, SQL and Algorithm
+          </p>
+        </div>
+        <div class="categories">
+          <h2>CATEGORIES</h2>
+          <p>JS</p>
+          <p>UI Design</p>
+          <p>REACT JS</p>
+          <p>HTML</p>
+          <p>CSS</p>
+          <p>Templates</p>
+        </div>
+        <div class="quick-link">
+          <h2>ََQUICK LINKS</h2>
+          <p>About Us</p>
+          <p>Contact Us</p>
+          <p>Contribute</p>
+          <p>Privacy Policy</p>
+          <p>Sitemap</p>
+        </div>
+      </div>
+
+      <div class="d-flex p-3 container justify-content-between">
+        <div class="copyright">
+          <p>Copyright © 2017 All Rights Reserved by MinaNagy.</p>
+        </div>
+        <div class="socialMedia d-flex justify-content-evenly">
+          <div class="containIcon">
+            <a href="https://www.linkedin.com/in/mina-nagy-front-end/">
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+          </div>
+          <div class="containIcon">
+            <a href="https://mail.google.com/mail/u/0/?pli=1#inbox">
+              <i class="fa-brands fa-google"></i>
+            </a>
+          </div>
+          <div class="containIcon">
+            <a href="https://github.com/MinaNagy99">
+              <i class="fa-brands fa-github"></i>
+            </a>
+          </div>
+          <div class="containIcon">
+            <a href="">
+              <i class="fa-brands fa-facebook"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="../bootstrap.bundle.min.js"></script>
+    <script src="cart.js"></script>
+    <script src="../node_modules/sweetalert2/dist/sweetalert2.all.min.js"></script>
+  </body>
+</html>

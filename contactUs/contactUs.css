@@ -1,0 +1,23 @@
+.contactUs{
+    background-image: url(../imgs/bg-contactus.webp);
+    background-position: center center;
+    background-size: 100% 100%;
+    padding: 20px;
+    border-radius: 10px;
+}
+.fullPage{
+    width: 100%;
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.handelWidth{
+    width: 50%
+}
+
+@media screen and (max-width: 900px) {
+    .handelWidth{
+        width: 100%
+    }
+  }

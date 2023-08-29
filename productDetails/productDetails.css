@@ -1,0 +1,17 @@
+.productDetails .container{
+    width: 100%;
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@media screen and (max-width: 900px) {
+    .productDetails .container{
+        width: 100%;
+        margin-top: 100px;
+
+    }
+  
+  }

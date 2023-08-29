@@ -1,0 +1,55 @@
+body{
+    font-family:sans-serif;
+}
+h1{
+    font-weight: 700;
+    font-size: 60px;
+}
+.p3{
+    font-size: 1.25rem;
+    margin: 21px 29px 0px 0px;
+}
+.marginTop{
+    margin-top: 90px;
+}
+.containerAbout{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+
+}
+.num{
+    font-size: 3.75rem;
+    font-weight: 700;
+    color: #80bb01;
+}
+
+.header2{
+    font-size: larger;
+    font-weight: 700;
+}
+img{
+    width: 100%;
+}
+.freepik{
+    border-bottom: 1px solid #80bb01;
+    padding-bottom: 5px;
+}
+button{
+    border: 2px solid #80bb01;
+    padding: 15px 40px;
+    background-color: white;
+    margin-top: 30px;
+}
+.scale1{
+    transform: scale(1.8);
+    margin-bottom: 100px;
+}
+
+@media screen and (max-width: 900px) {
+.handelMt{
+    margin-top: 160px;
+}
+  
+  }
